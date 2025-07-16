@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hola</h1>
+    <a href="/donaciones/formdonacion">Nuevo</a>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Monto</th>
+            <th>Mensaje</th>
+        </tr>
+        {{#each resultado}}
+        <tr>
+            <td>{{this.nombre}}</td>
+            <td>{{this.apellido}}</td>
+            <td>{{this.monto}}</td>
+            <td>{{this.mensaje}}</td>
+        </tr>
+        {{/each}}
+    </table>
+</body>
+</html>
